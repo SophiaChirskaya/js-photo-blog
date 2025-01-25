@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Edu Tas Beginner", sans-serif;
+
+}
+
+#wrapper{
+    margin: 0 auto;
+    width: calc(100vw - 20%)
+}
+
+
+header{
+    display: flex;
+    height: 25%;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/wall.png);
+}
+
+#title-box{
+
+    font-size: large;
+}
+
+#container{
+    width: 100%;
+    margin: auto;
+    background-image: url(./img/cork.png);
+}
+
+.row{
+    width: 90%;
+    margin: auto;
+    gap: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.card{
+    width: 32%;
+    background-color: white;
+    margin-bottom: 60px;
+    text-align: center;
+    position: relative;
+    
+    /* DEBUG */
+    /* height: 170px; */
+}
+
+.img-box{
+    max-width: 100%;
+    position: relative;
+    padding: 10px;
+
+
+}
+
+.img-box img{
+    max-width: 100%;
+    background-position: center;
+
+}
+
+.pin{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%);
+    z-index: 99;
+}
+
+.caption{
+    padding-bottom: 10 px;
+}
+
+.data{
+    font-size: small;
+}
+
+.title{
+    font-size: large;
+}
+
+/* SOLUZIONE RESPONSIVE */
+/* Tablet rules */
+
+@media screen and (max-width: 768px){
+
+    .card{
+        width: 40%;
+    }
+}
+/* Mobile rules */
+@media screen and (max-width: 480px) {
+    
+    .card{
+        width: 90%;
+    }
+}
