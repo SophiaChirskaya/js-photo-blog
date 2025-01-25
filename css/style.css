@@ -20,7 +20,7 @@ header{
     height: 25%;
     justify-content: center;
     align-items: center;
-    background-image: url(./img/wall.png);
+    background-image: url(../img/wall.png);
 }
 
 #title-box{
@@ -31,7 +31,7 @@ header{
 #container{
     width: 100%;
     margin: auto;
-    background-image: url(./img/cork.png);
+    background-image: url(../img/cork.png);
 }
 
 .row{
