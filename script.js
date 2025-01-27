@@ -42,3 +42,33 @@ axios.get(endpoint)
 
 })
 
+// FUNCTIONS
+
+// Evento rimozione overlay con button
+// Selezione degli elementi
+
+const button = document.getElementById("overlay-button");
+
+const contOverlay = document.getElementById("overlay");
+
+// Gestisco evento
+
+button.addEventListener('click', function () {
+    // Verifico qual'è la classe associata di partenza
+    const isStart = contOverlay.classList.contains("hide");
+
+    if (isStart) {
+        contOverlay.classList.add("show");
+        contOverlay.classList.remove("hide");
+    }else{
+        contOverlay.classList.add("hide");
+        contOverlay.classList.remove("show");   
+    }
+
+});
+
+
+
+
+
+
