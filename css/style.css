@@ -102,6 +102,11 @@ header{
     text-align: center;
 }
 
+#overlay.show{
+    display: none;
+}
+
+
 #overlay-button{
     background-color: darkgray;
     width: 100px;

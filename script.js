@@ -48,8 +48,8 @@ axios.get(endpoint)
 // Selezione degli elementi
 
 const button = document.getElementById("overlay-button");
-
 const contOverlay = document.getElementById("overlay");
+const cards = document.querySelector(".card");
 
 // Gestisco evento
 
@@ -66,6 +66,15 @@ button.addEventListener('click', function () {
     }
 
 });
+
+// Evento triggering overlay con click sull'immagine
+
+cards.addEventListener("click", function () {
+    cards.forEach(card => {
+        contOverlay.classList.remove("show");
+        contOverlay.classList.add("hide");
+    });
+})
 
 
 
