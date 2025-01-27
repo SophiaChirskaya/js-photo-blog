@@ -5,13 +5,15 @@
 }
 
 body{
+    position: relative;
     font-family: "Edu Tas Beginner", sans-serif;
 
 }
 
+
 #wrapper{
     margin: 0 auto;
-    width: calc(100vw - 20%)
+    width: calc(100vw - 20%);      
 }
 
 
@@ -40,12 +42,9 @@ header{
 
 
 .card{
-    flex-basis: 250px;
+    flex-basis: 260px;
     background-color: white;
-    margin-top: 40px;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 40px;
+    margin: 30px;
     text-align: left;
     position: relative;
     
@@ -89,6 +88,43 @@ header{
     font-size: large;
     padding-bottom: 10px;
 }
+
+/* OVERLAY RULES */
+
+#overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    text-align: center;
+}
+
+#overlay-button{
+    background-color: darkgray;
+    width: 100px;
+    font-size: 20px;
+    margin-top: 100px;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#main-img{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%);
+}
+
+#main-img img{
+    width: 50%;
+}
+
 
 /* SOLUZIONE RESPONSIVE */
 /* Tablet rules */
